@@ -1,26 +1,22 @@
-<div id="<%= dom_id club %>">
+<div id="<%= dom_id club %>" class="card">
   <p>
-    <strong>Name:</strong>
     <%= club.name %>
   </p>
 
-  <p>
-    <strong>Photo:</strong>
+  
+  <div class="img-container">
     <%= image_tag club.photo %>
-  </p>
+  </div>
 
   <p>
-    <strong>City:</strong>
     <%= club.city %>
   </p>
 
   <p>
-    <strong>Coach:</strong>
     <%= club.coach %>
   </p>
 
   <p>
-    <strong>Creation date:</strong>
     <%= club.creation_date %>
   </p>
 

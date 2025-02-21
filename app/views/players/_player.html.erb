@@ -1,31 +1,25 @@
-<div id="<%= dom_id player %>">
-  <p>
-    <strong>Photo:</strong>
+<div id="<%= dom_id player %>" class="card">
+  <div class="img-container">
     <%= image_tag player.photo %>
-  </p>
+  </div>
 
   <p>
-    <strong>Name:</strong>
     <%= player.name %>
   </p>
 
   <p>
-    <strong>Surname:</strong>
     <%= player.surname %>
   </p>
 
   <p>
-    <strong>Age:</strong>
     <%= player.age %>
   </p>
 
   <p>
-    <strong>Club:</strong>
     <%= link_to player.club.name, club_path(player.club) %>
   </p>
 
   <p>
-    <strong>Position:</strong>
     <%= player.position %>
   </p>
 
