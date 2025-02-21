@@ -21,7 +21,7 @@
 
   <p>
     <strong>Club:</strong>
-    <%= player.club_id %>
+    <%= link_to player.club.name, club_path(player.club) %>
   </p>
 
   <p>
